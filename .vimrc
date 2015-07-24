@@ -20,6 +20,7 @@ set splitbelow
 " set noshowmode
 set laststatus=2
 set backspace=indent,eol,start
+syntax enable
 
 " - Tabbing settings
 set tabstop=2
