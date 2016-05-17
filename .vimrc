@@ -11,7 +11,8 @@ set hidden
 set mouse=a
 set encoding=utf-8
 set colorcolumn=80,120
-colo monokai
+"colo monokai
+colo strange
 set scrolloff=3
 set wildmenu
 " set showmatch
