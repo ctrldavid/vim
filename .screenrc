@@ -1,0 +1,19 @@
+startup_message off
+shelltitle ""
+hardstatus alwayslastline 
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(x%{W}%ny*%fz%tv%?(%u)%?%{r}x)%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-w%?%{r}(%{W}%n*%t%?(%u)%?%{r})%{w}%?%+w%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+#caption always           "%?%F%{= Kk}%:%{=u kR}%?  %h %-024=%{+b} %C%a %D %d %M %Y%{= db}"
+altscreen on
+
+bind  ! select 11
+bind  @ select 12
+bind \# select 13
+bind  $ select 14
+bind  % select 15
+bind \^ select 16
+bind  & select 17
+bind  * select 18
+bind  ( select 19
+bind  ) select 11
