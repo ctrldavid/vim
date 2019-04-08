@@ -1,0 +1,29 @@
+Base strange (kyuukan?) theme colours:
+0: "#131411"
+1: "#FFA500"
+2: "#5D6065"
+3: "#222222"
+4: "#DDDDDD"
+5: "#818F71"
+6: "#999999"
+7: "#444444"
+8: "#97806E"
+9: "#BBBAAB"
+
+
+Background 131411
+Text 5D6065
+Bold Text 999999
+Selection 222222
+Cursor FFA500
+
+
+colours (normal | bright) bright can just be base + saturation/lightness tweak
+black
+red ( 97806E | ?? )
+green ( 818F71 | <90A874> )
+yellow ( BBBAAB | ?? )
+blue
+magenta
+cyan
+white

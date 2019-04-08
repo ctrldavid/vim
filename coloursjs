@@ -1,0 +1,45 @@
+.container {
+  margin: 12px;
+  padding: 20px;
+  border-radius: 5px;
+  float: left;
+  width: 20%;
+  font-family: monospace;
+  text-shadow: 1px 1px 2px white;
+  font-size: 24px;
+}
+.text {
+  filter: hue-rotate(180deg) invert(100%) ;
+}
+
+
+// JSON.stringify([...new Set(x.match(/#[0-9a-zA-Z]{6}/g))])
+colours
+const strange = ["#FFFFFF","#060606","#444444","#FFA500","#222222","#999999","#FF0000","#151515","#3d464c","#0066CC","#adac4f","#252525","#111111","#333333","#C0FFC0","#888888","#000000","#FFD700","#555555","#DDDDDD","#FF6666","#EEEEEE","#777777","#818f71","#bbbaab","#5d6065","#97806e","#FBD485","#1c1c1c"];
+
+const mine =  ["#131411","#FFA500","#5D6065","#222222","#DDDDDD","#818F71","#999999","#444444","#97806E","#BBBAAB"];
+
+const Component = (colour) => {
+  const container = document.createElement('div');
+  const text = document.createElement('div');
+  text.appendChild(document.createTextNode(colour));
+  container.className = 'container';
+  text.className = 'text';
+  container.appendChild(text);
+  container.style.backgroundColor = colour;
+  text.style.color = colour;
+  return container;
+}
+
+const Title = (text) => {
+  const div = document.createElement('div');
+  const h = document.createElement('h1');
+  h.appendChild(document.createTextNode(text));
+  div.appendChild(h);
+  return div;
+}
+
+document.body.appendChild(Title('mine'));
+mine.map(c => Component(c)).forEach(el => document.body.appendChild(el));
+document.body.appendChild(Title('strange'));
+strange.map(c => Component(c)).forEach(el => document.body.appendChild(el));
