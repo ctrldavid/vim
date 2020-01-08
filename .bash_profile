@@ -31,3 +31,6 @@ if [ -f '/Users/david/google-cloud-sdk/path.bash.inc' ]; then . '/Users/david/go
 if [ -f '/Users/david/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/david/google-cloud-sdk/completion.bash.inc'; fi
 
 alias k='kubectl'
+
+alias gl='git log --graph --oneline'
+alias gla='git log --graph --oneline --all'
