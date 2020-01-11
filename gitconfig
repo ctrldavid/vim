@@ -1,0 +1,7 @@
+[user]
+	name = David Seaman
+	email = davidroyseaman@gmail.com
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = vim
