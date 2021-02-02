@@ -1,0 +1,20 @@
+root@zkio:~/src# vim /usr/local/nginx/conf/nginx.conf
+root@zkio:~/src# mkdir /usr/local/nginx/conf/sites
+ /usr/local/nginx/sbin/nginx -s reload
+
+
+
+SSL
+---
+
+https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
+latest openssl: https://www.openssl.org/source/
+(used ./config, make, make install)
+
+ssl config: https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04 
+./configure --with-http_ssl_module
+
+./certbot-auto certonly --standalone -d rest.zk.io
+
+./repos/certbot/certbot-auto  renew --pre-hook "/usr/local/nginx/sbin/nginx -s stop" --post-hook "/usr/local/nginx/sbin/nginx"
+
